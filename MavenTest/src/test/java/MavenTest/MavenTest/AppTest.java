@@ -17,7 +17,6 @@ import jxl.read.biff.BiffException;
  * Unit test for simple App.
  */
 public class AppTest 
-    extends TestCase
 {
 	static WebDriver driver = new FirefoxDriver();
 	static String title;
@@ -45,7 +44,7 @@ public class AppTest
 	@AfterClass
 	public static void endScript() 
 	{
-		driver.close();
+		driver.quit();
 	}
 	
 }
