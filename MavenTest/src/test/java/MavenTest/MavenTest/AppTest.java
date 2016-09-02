@@ -44,7 +44,7 @@ public class AppTest
 	@AfterClass
 	public static void endScript() 
 	{
-		driver.quit();
+		driver.close();
 	}
 	
 }
