@@ -31,7 +31,7 @@ public class AppTest
 	@Test
 	public void testApp() throws NumberFormatException, BiffException, JXLException, IOException 
 	{
-		driver.get("http://www.flipkart.com/");
+		driver.get(System.getenv("url"));
 		acttitle = driver.getTitle();
 		
 		if(acttitle.equals(title))
