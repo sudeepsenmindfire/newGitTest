@@ -30,15 +30,13 @@ public class AppTest
 	@Test
 	public void testApp() throws NumberFormatException, BiffException, JXLException, IOException 
 	{
-		driver.get(System.getenv("url"));
+		driver.get("http://www.flipkart.com/");
+		//System.getenv("url");
 		acttitle = driver.getTitle();
 		
-		if(acttitle.equals(title))
-		{
-			System.out.println("Match");
-		}
-		else
-			System.out.println("No Match");
+		
+			System.out.println(acttitle);
+		driver.close();
 	}
 	
 	@AfterClass
@@ -48,3 +46,4 @@ public class AppTest
 	}
 	
 }
+
